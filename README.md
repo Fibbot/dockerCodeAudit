@@ -2,6 +2,7 @@
 Docker makefile for a collection of static code analysis tools packaged together
 
 ## Install
+* git clone https://github.com/Fibbot/dockerCodeAudit.git
 * chmod +x install.sh
 * ./install.sh
 
