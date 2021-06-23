@@ -2,16 +2,17 @@
 Docker makefile for a collection of static code analysis tools packaged together
 
 ## Install
-* git clone https://github.com/Fibbot/dockerCodeAudit.git
+* copy install.sh
 * chmod +x install.sh
 * ./install.sh
 
 or 
 
 * git clone https://github.com/Fibbot/dockerCodeAudit.git
-* docker build -t staticaudit .
 * mkdir -p scan/repos
 * mkdir scan/results
+* docker build -t staticaudit .
+
 ## Usage
 
 Throw the source files to be scanned into the scan/repos folder
