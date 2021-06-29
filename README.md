@@ -50,4 +50,4 @@ DependencyCheck is symlinked with `depcheck`.
 * `$RES`: `/scan/results`
 * `$GRDIR`: `/tools/graudit/signatures`
 * `graudit`: `/bin/graudit`
-* `depcheck`: /tools/dependency-check/bin/dependency-check.sh
+* `depcheck`: `/tools/dependency-check/bin/dependency-check.sh`
