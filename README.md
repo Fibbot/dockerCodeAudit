@@ -3,7 +3,7 @@ Docker makefile for a collection of static code analysis tools packaged together
 
 ## Tools included
 * [semgrep](https://github.com/returntocorp/semgrep)
-** If this container needs to be brought to a non-internet connected box, you'll need the rules list downloaded and brought into the container in order to specify the rules location (normally it will pull from the internet). That can be found [here](https://github.com/returntocorp/semgrep-rules)
+  * If this container needs to be brought to a non-internet connected box, you'll need the rules list downloaded and brought into the container in order to specify the rules location (normally it will pull from the internet). That can be found [here](https://github.com/returntocorp/semgrep-rules)
 * [graudit](https://github.com/wireghoul/graudit)
 * [Ripgrep](https://github.com/BurntSushi/ripgrep)
 * [OWASP Dependency Check](https://github.com/jeremylong/DependencyCheck)
