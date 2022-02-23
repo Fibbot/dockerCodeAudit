@@ -11,7 +11,7 @@ RUN mkdir -p /scan
 WORKDIR /scan
 RUN python3 -m pip install semgrep
 RUN echo "sg(){\n\
-semgrep --config=r/\$1 repos/ --severity WARNING -o results/semgrepOutput.json --json\n\
+semgrep --config=r/\$1 . --severity WARNING -o /scan/results/semgrepOutput.json --json\n\
 }" >> ~/.bashrc
 RUN ln -s /tools/graudit/graudit /bin/graudit
 RUN ln -s /tools/dependency-check/bin/dependency-check.sh /bin/depcheck
