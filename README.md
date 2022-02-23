@@ -39,14 +39,14 @@ Throw the source files to be scanned into the scan/repos folder
 
 This drops you into /scan, throw any results into /scan/results to keep the results around on the host.
 
-Inside the /scan folder you can run `sg languageName` eg. `sg python` that will run semgrep with WARNING severity with all rules particular to that language on code in the /repos folder then output json results to the /results folder (how I use it most often)
+Inside the /scan folder you can run `sg languageName` eg. `sg python` in the directory of the source code and that will run semgrep with WARNING severity with all rules particular to that language then output json results to the /scan/results folder (how I use it most often)
 
 Graudit is symlinked to be run with `graudit` with `$GRDIR` at the signatures folder and `$RES` for the /scan/results folder, so you could run something like `graudit -d $GRDIR/python.db repos/ >> $RES/grauditResults.txt`
 
 DependencyCheck is symlinked with `depcheck`.
 
 ### alias/export tl;dr
-* `sg`: `semgrep --config=r/\$1 repos/ --severity WARNING -o results/semgrepOutput.json --json`
+* `sg`: `semgrep --config=r/\$1 . --severity WARNING -o /scan/results/semgrepOutput.json --json`
 * `$RES`: `/scan/results`
 * `$GRDIR`: `/tools/graudit/signatures`
 * `graudit`: `/bin/graudit`
